@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  /* Main Container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 80vh;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  /* Left Side Styling */
+  .left_side {
+    background-color: #007AFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    width: 50%;
+    flex-grow: 1;
+  }
+  
+  .left_side h5 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .left_side img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+  }
+  
+  /* Right Side Styling */
+  .right_side {
+    background-color: white;
+    padding: 25px 40px;
+    width: 50%;
+    flex-grow: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;/
+  }
+  
+  /* Form Styling */
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Form Row */
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Input Fields */
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  /* Active state for input fields */
+  input:focus {
+    border: 2px solid #007AFF;
+    outline: none;
+  }
+  
+  /* Checkbox Group */
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  
+  .checkbox-group div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Button Group */
+  .btn_grp {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 40px;
+  }
+  
+  /* Common Button Styling */
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Blue Button */
+  .blue-btn {
+    background-color: #007AFF;
+  }
+  
+  /* Black Button */
+  .black-btn {
+    background-color: black;
+  }
+  
+  .log_in {
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .app_store {
+    margin-top: 30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left_side,
+    .right_side {
+      width: 100%;
+      padding: 20px;
+      min-height: auto;
+    }
+  }
